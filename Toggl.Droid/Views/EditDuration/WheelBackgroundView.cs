@@ -4,10 +4,10 @@ using Android.Graphics;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
-using Toggl.Giskard.Extensions;
-using Toggl.Giskard.Views.EditDuration.Shapes;
+using Toggl.Droid.Extensions;
+using Toggl.Droid.Views.EditDuration.Shapes;
 
-namespace Toggl.Giskard.Views.EditDuration
+namespace Toggl.Droid.Views.EditDuration
 {
     [Register("toggl.giskard.views.WheelBackgroundView")]
     public class WheelBackgroundView : View

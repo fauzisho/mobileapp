@@ -12,14 +12,14 @@ using Android.Views.InputMethods;
 using Android.Widget;
 using Java.Lang;
 using Toggl.Core;
-using Toggl.Giskard.Extensions;
-using Toggl.Giskard.Views.EditDuration.Shapes;
+using Toggl.Droid.Extensions;
+using Toggl.Droid.Views.EditDuration.Shapes;
 using System.Reactive.Subjects;
 using System.Reactive.Linq;
 using System.Reactive;
 using Android.Content.Res;
 
-namespace Toggl.Giskard.Views.EditDuration
+namespace Toggl.Droid.Views.EditDuration
 {
     public static class WheelDurationInputExtensions
     {

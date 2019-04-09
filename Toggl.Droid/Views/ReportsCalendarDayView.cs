@@ -6,10 +6,10 @@ using Android.Support.V4.Content;
 using Android.Util;
 using Android.Widget;
 using MvvmCross.Plugin.Color.Platforms.Android;
-using Toggl.Giskard.Extensions;
+using Toggl.Droid.Extensions;
 using static Toggl.Core.UI.Helper.Color;
 
-namespace Toggl.Giskard.Views
+namespace Toggl.Droid.Views
 {
     [Register("toggl.giskard.views.ReportsCalendarDayView")]
     public sealed class ReportsCalendarDayView : TextView
