@@ -28,7 +28,7 @@ using Observable = System.Reactive.Linq.Observable;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.ReportsCalendarView")]
+    [Register("toggl.droid.views.ReportsCalendarView")]
     public sealed class ReportsCalendarView : LinearLayout
     {
         private TextView monthYear;

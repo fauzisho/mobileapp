@@ -20,7 +20,7 @@ using Math = System.Math;
 using Color = Android.Graphics.Color;
 namespace Toggl.Droid.Views.EditDuration
 {
-    [Register("toggl.giskard.views.WheelForegroundView")]
+    [Register("toggl.droid.views.WheelForegroundView")]
     public class WheelForegroundView : View
     {
         private readonly Color capBackgroundColor = Color.White;

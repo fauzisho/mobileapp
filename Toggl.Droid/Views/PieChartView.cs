@@ -14,7 +14,7 @@ using Toggl.Droid.Extensions;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.PieChartView")]
+    [Register("toggl.droid.views.PieChartView")]
     public sealed class PieChartView : View
     {
         private int padding;

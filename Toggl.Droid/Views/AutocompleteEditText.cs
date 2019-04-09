@@ -14,7 +14,7 @@ using Toggl.Droid.Extensions.Reactive;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.AutocompleteEditText")]
+    [Register("toggl.droid.views.AutocompleteEditText")]
     public sealed class AutocompleteEditText : EditText, ITextWatcher
     {
         private bool isEditingText = false;

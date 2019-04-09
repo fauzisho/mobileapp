@@ -9,7 +9,7 @@ using Toggl.Droid.Adapters;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.ReportsCalendarRecyclerView")]
+    [Register("toggl.droid.views.ReportsCalendarRecyclerView")]
     public sealed class ReportsCalendarRecyclerView : RecyclerView
     {
         public ReportsCalendarRecyclerView(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)

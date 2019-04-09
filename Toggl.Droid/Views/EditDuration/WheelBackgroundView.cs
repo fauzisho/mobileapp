@@ -9,7 +9,7 @@ using Toggl.Droid.Views.EditDuration.Shapes;
 
 namespace Toggl.Droid.Views.EditDuration
 {
-    [Register("toggl.giskard.views.WheelBackgroundView")]
+    [Register("toggl.droid.views.WheelBackgroundView")]
     public class WheelBackgroundView : View
     {
         private readonly Color wheelColor = Color.ParseColor("#f3f3f3");

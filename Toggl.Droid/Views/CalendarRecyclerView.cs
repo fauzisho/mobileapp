@@ -18,7 +18,7 @@ using Color = Android.Graphics.Color;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.CalendarRecyclerView")]
+    [Register("toggl.droid.views.CalendarRecyclerView")]
     public class CalendarRecyclerView : RecyclerView
     {
         private const int hoursPerDay = Constants.HoursPerDay;

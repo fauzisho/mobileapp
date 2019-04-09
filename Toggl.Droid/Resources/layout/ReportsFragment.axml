@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize">
-        <toggl.giskard.views.ReportsCalendarView
+        <toggl.droid.views.ReportsCalendarView
             android:id="@+id/ReportsFragmentCalendarView"
             android:orientation="vertical"
             android:layout_marginTop="-500dp"

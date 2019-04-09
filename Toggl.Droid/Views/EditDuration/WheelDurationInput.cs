@@ -27,7 +27,7 @@ namespace Toggl.Droid.Views.EditDuration
             => $"{(int)value.TotalHours}:{value.Minutes.ToString("D2", CultureInfo.InvariantCulture)}:{value.Seconds.ToString("D2", CultureInfo.InvariantCulture)}";
     }
 
-    [Register("toggl.giskard.views.WheelDurationInput")]
+    [Register("toggl.droid.views.WheelDurationInput")]
     public partial class WheelDurationInput : EditText, ITextWatcher, View.IOnTouchListener
     {
         private Color fadedTextColor = Color.Gray;

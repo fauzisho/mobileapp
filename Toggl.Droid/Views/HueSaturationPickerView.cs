@@ -12,7 +12,7 @@ using static System.Math;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.HueSaturationPickerView")]
+    [Register("toggl.droid.views.HueSaturationPickerView")]
     public sealed class HueSaturationPickerView : View
     {
         private static readonly int[] brightnessGradientColors = { Color.Transparent.ToArgb(), Color.White.ToArgb() };

@@ -11,7 +11,7 @@ using static Toggl.Core.UI.Helper.Color;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.ReportsCalendarDayView")]
+    [Register("toggl.droid.views.ReportsCalendarDayView")]
     public sealed class ReportsCalendarDayView : TextView
     {
         private readonly int cornerRadius;

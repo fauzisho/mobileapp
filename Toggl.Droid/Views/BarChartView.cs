@@ -10,7 +10,7 @@ using Toggl.Droid.ViewHelpers;
 
 namespace Toggl.Droid.Views
 {
-    [Register("toggl.giskard.views.BarChartView")]
+    [Register("toggl.droid.views.BarChartView")]
     public class BarChartView : View
     {
         private const float barDrawingYTranslationAdjustmentInPixels = 1f;
