@@ -73,19 +73,7 @@ namespace Toggl.PrimeRadiant.Realm
             => getRealmInstance().All<TRealmEntity>().Single(matchEntity(id));
 
         public IEnumerable<TModel> Get(long[] ids)
-        {
-            try
-            {
-                // TODO: This is for debugging purposes only.
-                var asdf = getRealmInstance().All<TRealmEntity>().Where(matchMultipleEntities(ids)).ToList();
-                return asdf;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                return null;
-            }
-        }
+            => getRealmInstance().All<TRealmEntity>().Where(matchMultipleEntities(ids)).ToList();
 
         public TModel ChangeId(long currentId, long newId)
         {
