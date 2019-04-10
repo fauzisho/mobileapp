@@ -50,7 +50,7 @@ namespace Toggl.PrimeRadiant.Realm
             var originalIdProperty = Expression.Property(entityParam, typeof(TRealmEntity), "OriginalId");
 
             var containsIdExpr = contains(idProperty, ids);
-            var containsOriginalIdExpr = containsNullable(originalIdProperty, nullableIds);
+            var containsOriginalIdExpr = contains(originalIdProperty, nullableIds);
 
             var matchExpression = Expression.OrElse(containsIdExpr, containsOriginalIdExpr);
 
@@ -61,15 +61,9 @@ namespace Toggl.PrimeRadiant.Realm
             where TRealmEntity : RealmObject, IIdentifiable, TModel
             => entity.Id;
 
-        private static Expression contains(Expression property, long[] ids)
+        private static Expression contains<T>(Expression nullableProperty, T[] ids)
         {
-            var equalsList = ids.Select(id => Expression.Equal(property, Expression.Constant(id)));
-            return equalsList.Aggregate(Expression.Constant(false) as Expression, (partial, expr) => Expression.OrElse(expr, partial));
-        }
-
-        private static Expression containsNullable(Expression nullableProperty, long?[] ids)
-        {
-            var equalsList = ids.Select(id => Expression.Equal(nullableProperty, Expression.Convert(Expression.Constant(id), typeof(long?))));
+            var equalsList = ids.Select(id => Expression.Equal(nullableProperty, Expression.Convert(Expression.Constant(id), typeof(T))));
             return equalsList.Aggregate(Expression.Constant(false) as Expression, (partial, expr) => Expression.OrElse(expr, partial));
         }
     }
